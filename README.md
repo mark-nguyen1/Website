@@ -1,1 +1,1 @@
-# snapApplication
+README
