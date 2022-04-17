@@ -1,0 +1,48 @@
+.navigationBar a{
+  padding: 14px 16px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em
+  
+}
+
+.navigationBar a:hover{
+  color: blue;
+  background: lightgrey;
+}
+
+.centerImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hideImage{
+    display: none;
+}
+
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background : AntiqueWhite;
+ 
+}
+
+button {
+  padding: 10px;
+  border-radius: 150px;
+}
+
+ 
+#prevButton{
+  background: black;
+    color: AntiqueWhite;
+}
+
+#nextButton{
+  background: black;
+    color: AntiqueWhite;
+}
