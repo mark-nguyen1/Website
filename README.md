@@ -3,7 +3,7 @@
 
 I chose to create my version of the fast food burger restaurant "The Win-Dow" located in Venice Beach.
 
-## Website: https://mark-nguyen1.github.io/snapApplication/
+## Website: https://mark-nguyen1.github.io/mockWebsite/
 
 ## Features 
 
