@@ -1,13 +1,11 @@
-# **Snap Engineering Academy Project Assessment**
-
-Name: Mark Nguyen
-<br>Task: Create a website for a small business in LA
+# ** Project Assessment**
+<br>Task: Create a mock website for a small business in LA 
 
 I chose to create my version of the fast food burger restaurant "The Win-Dow" located in Venice Beach.
 
-Link to GitHub Pages: https://wixair.github.io/snapApplication/index.html
+## Website: https://mark-nguyen1.github.io/snapApplication/
 
-## **Recommended Features for first time creating a website (all):**
+## Features 
 
 ✅ About the Business section
 <br>✅ Images and descriptions of 3-4 items/services offered
@@ -20,7 +18,6 @@ Link to GitHub Pages: https://wixair.github.io/snapApplication/index.html
 ✅ Use of JavaScript
 <br>✅ A photo gallery
 <br>✅ Navigation menu and multiple pages
-
-No templates were used.
+ 
 
  
