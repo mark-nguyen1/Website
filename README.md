@@ -1,5 +1,3 @@
- 
-Name: Mark Nguyen
-<br/>Personal Website Project of a burger fast food restaurant
-<br/>://wixair.github.io/snapApplication/index.html
- 
+Mark Nguyen
+<br/>Personal Project of creating a burger fast food restaurant simple website
+https://mark-nguyen1.github.io/Win-Dow/
