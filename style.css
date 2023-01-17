@@ -1,33 +1,47 @@
-.navigationBar a{
+.navigationBar{
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigationBarInside a{
   padding: 14px 16px;
   display: block;
   float: left;
   text-decoration: none;
   color: black;
-  font-size: 1.5em
-  
+  font-size: 1.5em;
+}
+ 
+.navigationBarInside a:hover{
+  color: LightBlue;
+  background: None;
 }
 
-.navigationBar a:hover{
-  color: blue;
-  background: lightgrey;
+.topLogo{
+  border-style: double;
 }
-
 .centerImg{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
 }
 
 .hideImage{
     display: none;
 }
-
+.middleBody{
+  background-color: LightBlue
+ 
+}
 body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  background : AntiqueWhite;
+  background : white;
  
 }
 
@@ -46,3 +60,20 @@ button {
   background: black;
     color: AntiqueWhite;
 }
+
+footer {
+  text-align: center;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+ 
+.column {
+  float: left;
+  width: 33.3333%;
+  background-color: black;
+}
+
+ 
+ 
+ 
