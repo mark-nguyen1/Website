@@ -11,8 +11,8 @@ function reversePicture(){
   currentPicture--;
   currentTextBody--;
   if(currentPicture == 0){
-    currentPicture = 5;
-    currentTextBody = 5;
+    currentPicture = 4;
+    currentTextBody = 4;
   }
   pictureName = "image" + currentPicture;
   pictureText = "textForImage" + currentTextBody;
@@ -25,7 +25,7 @@ function forwardPicture(){
   document.getElementById(pictureText).classList.add("hideImage");
   currentPicture++;
   currentTextBody++;
-  if(currentPicture == 6){
+  if(currentPicture == 5){
     currentPicture = 1;
     currentTextBody = 1;
   }
