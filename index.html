@@ -1,119 +1,365 @@
 <!DOCTYPE html>
 <html>
   <header>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>Mark Nguyen</title>
   </header>
-  
+
   <body>
-   <div class = "navigationBar"> <!-- Navigation Bar -->
-      <div class = "navigationBarInside">
-        <a href = "ourValues.html">Our Values</a>
-        <a href = "menu.html">Menu</a>
-        <a href = "photoGallery.html">Photo Gallery</a> 
+    <div class="navigationBar">
+      <!-- Navigation Bar -->
+      <div class="navigationBarInside">
+        <a href="ourValues.html">Our Values</a>
+        <a href="menu.html">Menu</a>
+        <a href="photoGallery.html">Photo Gallery</a>
       </div>
-     
-      <a href = "https://www.yelp.com/biz/the-window-silver-lake-los-angeles-2" target ="_blank">
-      <img style="float: right;padding-right:30px;padding-top:10px;padding-left:10px" src = "https://icon-library.com/images/yelp-icon-black-and-white/yelp-icon-black-and-white-8.jpg" alt = "yelpLogo" height = "38" />
+
+      <a
+        href="https://www.yelp.com/biz/the-window-silver-lake-los-angeles-2"
+        target="_blank"
+      >
+        <img
+          style="
+            float: right;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-left: 10px;
+          "
+          src="https://icon-library.com/images/yelp-icon-black-and-white/yelp-icon-black-and-white-8.jpg"
+          alt="yelpLogo"
+          height="38"
+        />
       </a>
-      <a href = "https://www.instagram.com/thewindow.la/?hl=en" target ="_blank">
-      <img style="float: right;padding : 10px" src = "https://icon-library.com/images/instagram-icon-black-png/instagram-icon-black-png-29.jpg" alt = "instagramLogo" height = "38" />
-      </a>
-    </div><br/><br/><br/>
-    
-    <div class="topLogo"> <!--   The Win-Dow Logo -->
-      <a href = "index.html" > 
-      <img class= "centerImg" height = "110"  src = "https://images.squarespace-cdn.com/content/v1/5f57ea7c6f66f91e1bec38dc/1600361476839-RHKGOX4766DU57XK44HF/AB_The+Window_Logo.png" alt = "company logo"/>
+      <a href="https://www.instagram.com/thewindow.la/?hl=en" target="_blank">
+        <img
+          style="float: right; padding: 10px"
+          src="https://icon-library.com/images/instagram-icon-black-png/instagram-icon-black-png-29.jpg"
+          alt="instagramLogo"
+          height="38"
+        />
       </a>
     </div>
-    
-    <div class = "middleBody" display: block> <!-- the rotating images -->
-      <hr>
-      <br/>
-      <center>
-        <button id = "prevButton" onclick = "reversePicture()" >Prev</button>
-        <button id = "nextButton" onclick = "forwardPicture()">Next</button>
-      </center>
-      <br/>
-      <div > 
+    <br /><br /><br />
+    <div class="fade-in-image">
+      <div class="topLogo" height="100%">
+        <!--   The Win-Dow Logo -->
+        <br /><br /><br /><br />
+        <a href="index.html">
+          <img
+            class="centerImg"
+            src="https://images.squarespace-cdn.com/content/v1/5f57ea7c6f66f91e1bec38dc/1600361476839-RHKGOX4766DU57XK44HF/AB_The+Window_Logo.png"
+            alt="company logo"
+          />
+        </a>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <img
+          id="arrowLeft"
+          style="float: left; padding-left: 100px"
+          src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/arrow.png?v=1673986818959"
+          height="100px"
+        />
         <center>
-        <img id = "image1" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/building.jpg?v=1650066125309" alt = "building" width = "420" height = "400"/>
-        <img id = "image2" class = "hideImage" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/burger.jpg?v=1650065232625" alt = "burgerAndFrenchFries" width = "420" height = "400"/>
-        <img id = "image3" class = "hideImage" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/DippedCones.jpg?v=1650065692860" alt = "dippedIceCream" width = "420" height = "400"/>
-        <img id = "image4" class = "hideImage" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/chickenSandwich.jpg?v=1650066113811" alt = "chickenSandwich" width = "420" height = "400" />
-  <!--       <img id = "image5" class = "hideImage" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/burger4.jpg?v=1650066112303" alt = "burgerWithLogo" width = "420" height = "400"/> -->
-  <!--       <img id = "textForImage5" class = "hideImage" style = "margin-left:170px" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/maps.jpg?v=1650086256558" alt = "googleMapsVenice" width = "420" height = "400"/> -->
+          <img
+            id="welcome"
+            style="float: middle"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/welcome.png?v=1673988442133"
+          />
+          <img
+            style="float: right; padding-right: 100px"
+            id="arrowRight"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/arrow.png?v=1673986818959"
+            height="100px"
+          />
         </center>
-     </div>
-     <center> 
-     <div>      
-      <div id = "textForImage1"  >
-        <h1 id = "headerText1"><u>The Win~Dow</u></h1>
-        <p id = "text1">The Win-Dow is a destination for classic smash-burgers, fried chicken sandwiches and dipped ice cream. 
-                      <br/> We are open <b>7 days a week</b> and are available for pick-up and delivery. 
-                      <br/> Pull up a stool outside and hang out with our neighbors as you enjor our signature dishes!  
-                       <br/><br/>We have three locations to choose from:
-                      <br/> <a href= "https://www.google.com/maps?q=425+Rose+Ave+Venice,+California+90291&rlz=1C1CHBF_enUS918US918&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjQxd3q55f3AhVFDkQIHfFfBg8Q_AUoAXoECAEQAw" target ="_blank">Rose Ave | </a>
-                            <a href= "https://www.google.com/maps/place/1529+Griffith+Park+Blvd,+Los+Angeles,+CA+90026/@34.090964,-118.2794494,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7480d8aafbd:0x953ca271f3232e52!8m2!3d34.0909596!4d-118.2772607" target ="_blank">Silver Lake | </a>
-                            <a href= "https://www.google.com/maps?q=1827+Ocean+Front+Walk+Venice,+CA+90291&rlz=1C1CHBF_enUS918US918&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjknYn46Jf3AhV0D0QIHQucDcIQ_AUoAXoECAEQAw" target ="_blank">Venice Boardwalk</a>
-        <br/></p><br/><br/>
       </div>
-      <div id = "textForImage2" class = "hideImage">
-        <h1 id = "headerText2"> <u> Double Cheeseburger $6.50 </u> </h1>
-        <p id = "text2">"WinDow is an excellent addition to a growing landscape of quality smash burgers on the west side.
-                   <br/>Their burgers have the grilled onions incorporated in the patty, which gives them an patty-melt taste.
-          <br/>They also have a great salad option, crispy fries and delicious creamy milkshakes. <br/><br/><b>"Will definitely be back."</b>
-                   <br/><i>-Denis S.</i></p> <br/><br/>        
-      </div>
-      <div id = "textForImage3" class = "hideImage">
-        <h1 id = "headerText3"><u>Ice Cream Dipped Cones $4.50</u></h1>
-        <p>
-          It was satisfying watching the staff member make the dipped cone from start to finish. 
-          <br/>The layers of the soft serve gets dipped into a salted caramel dip,  
-          <br/>drizzled with caramel sauce, and topped with some flakey sea salt.
-          <br/>
-          <br/><b>My boyfriend really enjoyed the cone!</b>
-          <br/><i>-Lucy L.</i>
-        </p><br/><br/>
-      </div>
-      <div id= "textForImage4" class = "hideImage">
-        <h1 id = "headerText4"><u>Fried Chicken Sandwich $6.25</u></h1>
-        <p id = "text4">"Great service, friendly staff, <b>AMAZING</b> fried chicken sandwiches and shakes. 
-                   <br/>The burger I had was pretty great.  But their fried chicken sandwiches are <b>INCREDIBLE.</b>  
-                   <br/>I absolutely recommend The WinDow Silver Lake for a delicious, quick bite to eat!!"
-                   <br/><br/>
-                  <b> 10 out of 10 hands down. </b>
-                   <br/><i>-Jeremiah C.</i></p><br/><br/>
-      </div>
-     </div> 
-    </center>
-   </div><br/>
-  
-  <footer>
-    <div class="column">  <!-- 3 column footer --> 
-      <h3>Author</h3>
-      <small>Mark Nguyen</small>   
-      <br/><small>Linkedin  GitHub</small>
-      <br/>  <a href = "https://www.linkedin.com/in/mark-nguyen1/" target ="_blank">
-              <img  style="float" id = "linkdein" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/linkdein.png?v=1673916592232" height = "56px" width = "55px">
-             </a>
-            <a href = "https://github.com/mark-nguyen1/Win-Dow" target = "_blank">
-              <img style= "float" id = "github" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/githubfinal.png?v=1673917266394" height = "56px" width = "55px">
+      <br /><br /><br /><br />
+    </div>
+
+    <div class = "middleBody" display: block>
+    <!-- the rotating images -->
+    <br /><br /><br />
+    <div>
+      <center>
+        <div class="container">
+          <img
+            id="image1"
+            class="showImage"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/building.jpg?v=1650066125309"
+            alt="building"
+            width="420"
+            height="400"
+          />
+          <div id="innerimagetext1" class="middle">
+            <div class="text">Venice Location</div>
+          </div>
+          <img
+            id="image2"
+            class="hideImage"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/burger.jpg?v=1650065232625"
+            alt="burgerAndFrenchFries"
+            width="420"
+            height="400"
+          />
+          <div id="innerimagetext2" class="hideImage">
+            <div class="text">Most Popular</div>
+          </div>
+          <img
+            id="image3"
+            class="hideImage"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/DippedCones.jpg?v=1650065692860"
+            alt="dippedIceCream"
+            width="420"
+            height="400"
+          />
+          <div id="innerimagetext3" class="hideImage">
+            <div class="text">Refreshing</div>
+          </div>
+          <img
+            id="image4"
+            class="hideImage"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/chickenSandwich.jpg?v=1650066113811"
+            alt="chickenSandwich"
+            width="420"
+            height="400"
+          />
+          <div id="innerimagetext4" class="hideImage">
+            <div class="text">Classic</div>
+          </div>
+          <!--       <img id = "image5" class = "hideImage" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/burger4.jpg?v=1650066112303" alt = "burgerWithLogo" width = "420" height = "400"/> -->
+          <!--       <img id = "textForImage5" class = "hideImage" style = "margin-left:170px" src = "https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/maps.jpg?v=1650086256558" alt = "googleMapsVenice" width = "420" height = "400"/> -->
+        </div>
+      </center>
+    </div>
+    <center>
+      <div>
+        <div id="textForImage1">
+          <h1 id="headerText1">The Win~Dow</h1>
+          <p id="text1">
+            Classic smash-burgers, fried chicken sandwiches and dipped ice
+            cream. <br />
+            We are open <b>7 days a week</b> and are available for pick-up and
+            delivery. <br />
+            Pull up a stool outside and hang out with our neighbors as you enjor
+            our signature dishes! <br /><br />3 locations to choose from: <br />
+            <a
+              href="https://www.google.com/maps?q=425+Rose+Ave+Venice,+California+90291&rlz=1C1CHBF_enUS918US918&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjQxd3q55f3AhVFDkQIHfFfBg8Q_AUoAXoECAEQAw"
+              target="_blank"
+              >Rose Ave |
             </a>
-      <p></p><br/><br/><br/>
+            <a
+              href="https://www.google.com/maps/place/1529+Griffith+Park+Blvd,+Los+Angeles,+CA+90026/@34.090964,-118.2794494,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7480d8aafbd:0x953ca271f3232e52!8m2!3d34.0909596!4d-118.2772607"
+              target="_blank"
+              >Silver Lake |
+            </a>
+            <a
+              href="https://www.google.com/maps?q=1827+Ocean+Front+Walk+Venice,+CA+90291&rlz=1C1CHBF_enUS918US918&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjknYn46Jf3AhV0D0QIHQucDcIQ_AUoAXoECAEQAw"
+              target="_blank"
+              >Venice Boardwalk</a
+            >
+          </p>
+          <br />
+        </div>
+        <div id="textForImage2" class="hideImage">
+          <h1 id="headerText2"><u> Double Cheeseburger $6.50 </u></h1>
+          <p id="text2">
+            "WinDow is an excellent addition to a growing landscape of quality
+            smash burgers on the west side. <br />Their burgers have the grilled
+            onions incorporated in the patty, which gives them an patty-melt
+            taste. <br />They also have a great salad option, crispy fries and
+            delicious creamy milkshakes. <br /><br /><b
+              >"Will definitely be back."</b
+            >
+            <br /><i>-Denis S.</i>
+          </p>
+          <br />
+        </div>
+        <div id="textForImage3" class="hideImage">
+          <h1 id="headerText3"><u>Ice Cream Dipped Cones $4.50</u></h1>
+          <p>
+            It was satisfying watching the staff member make the dipped cone
+            from start to finish.
+            <br />The layers of the soft serve gets dipped into a salted caramel
+            dip, <br />drizzled with caramel sauce, and topped with some flakey
+            sea salt.
+            <br />
+            <br /><b>My boyfriend really enjoyed the cone!</b> <br /><i
+              >-Lucy L.</i
+            >
+          </p>
+          <br />
+        </div>
+        <div id="textForImage4" class="hideImage">
+          <h1 id="headerText4"><u>Fried Chicken Sandwich $6.25</u></h1>
+          <p id="text4">
+            "Great service, friendly staff, <b>AMAZING</b> fried chicken
+            sandwiches and shakes. <br />The burger I had was pretty great. But
+            their fried chicken sandwiches are <b>INCREDIBLE.</b> <br />I
+            absolutely recommend The WinDow Silver Lake for a delicious, quick
+            bite to eat!!" <br /><br />
+            <b> 10 out of 10 hands down. </b>
+            <br /><i>-Jeremiah C.</i>
+          </p>
+          <br />
+        </div>
+      </div>
+    </center>
+    <center>
+      <button id="prevButton" onclick="reversePicture()">Prev</button>
+      <button id="nextButton" onclick="forwardPicture()">Next</button>
+    </center>  
+    <br />
+    <br />
+  </div>
+    <div class="container">
+      <img
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/IMG_6763.jpg?v=1674027855721"
+        alt="Avdfdatar"
+        class="image1"
+        style="float: left; padding: 0.35%; padding-top: 50px"
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle1">
+        <div class="textBelow"><a href="ourValues.html">Our Values</a></div>
+      </div>
     </div>
-    <div class="column">
-      <h3>The Win~Dow</h3>
-      <small>Simple Website  <br/> Thank you for Visiting <br/> \ (•◡•) / </small>
-      <p><br/><br/><br/><br/> </p>
+
+    <div class="container">
+      <img
+        class="showImage"
+        style="float: left; padding: 0.35%; padding-top: 50px"
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/menu.jpeg?v=1673990154173"
+        alt="building"
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle2">
+        <div class="textBelow"><a href="menu.html">Menu</a></div>
+      </div>
     </div>
-    <div class="column">
-      <h3>Languages</h3>
-      <small> HTML <br/> CSS <br/> JavaScript</small>
-      <p><br/><br/><br/><br/></p>
+
+    <div class="container">
+      <img
+        class="showImage"
+        style="float: left; padding: 0.35%; padding-top: 50px"
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/building.jpg?v=1650066125309"
+        alt="building"
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle3">
+        <div class="textBelow">
+          <a href="photoGallery.html">Photo Gallery</a>
+        </div>
+      </div>
     </div>
-</footer>
-    
+
+    <div class="container">
+      <img
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/fries.jpg?v=1674028384018"
+        alt="Avdfdatar"
+        class="image1"
+        style="
+          float: left;
+          padding: 0.35%;
+          padding-top: 20px;
+          padding-bottom: 100px;
+        "
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle4">
+        <div class="textBelow">Ice Cream</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img
+        class="showImage"
+        style="
+          float: left;
+          padding: 0.35%;
+          padding-top: 20px;
+          padding-bottom: 100px;
+        "
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/download.jpg?v=1674028412393"
+        alt="building"
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle5">
+        <div class="textBelow"><a href="index.html">The Win~Dow</a></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img
+        class="showImage"
+        style="
+          float: left;
+          padding: 0.35%;
+          padding-top: 20px;
+          padding-bottom: 100px;
+        "
+        src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.webp?v=1674027781610"
+        alt="building"
+        width="32.5%"
+        height="430px"
+      />
+      <div class="middle6">
+        <div class="textBelow">Yummy</div>
+      </div>
+    </div>
+    <hr />
+    <br /><br />
+
+    <footer>
+      <div class="column">
+        <!-- 3 column footer -->
+        <h3>Author</h3>
+        <small>Mark Nguyen</small>
+        <br /><small>Linkedin GitHub</small> <br />
+        <a href="https://www.linkedin.com/in/mark-nguyen1/" target="_blank">
+          <img
+            style="float"
+            id="linkdein"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/linkdein.png?v=1673916592232"
+            height="56px"
+            width="55px"
+          />
+        </a>
+        <a href="https://github.com/mark-nguyen1/Win-Dow" target="_blank">
+          <img
+            style="float"
+            id="github"
+            src="https://cdn.glitch.global/e69f825c-9d3a-4278-a98e-53c4d56c705f/githubfinal.png?v=1673917266394"
+            height="56px"
+            width="55px"
+          />
+        </a>
+        <p></p>
+        <br /><br /><br /><br /><br />
+      </div>
+      <div class="column">
+        <h3>The Win~Dow</h3>
+        <small>
+          Website <br />
+          Thank you for Visiting <br />
+          \ (•◡•) /
+        </small>
+        <p><br /><br /><br /><br /><br /><br /></p>
+      </div>
+      <div class="column">
+        <h3>Languages</h3>
+        <small>
+          HTML <br />
+          CSS <br />
+          JavaScript</small
+        >
+        <p><br /><br /><br /><br /><br /><br /></p>
+      </div>
+    </footer>
   </body>
 </html>
